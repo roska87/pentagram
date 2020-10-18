@@ -3,21 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/mAbout"
-        android:title="@string/text_menu_about">
-
-    </item>
-
-    <item
-        android:id="@+id/mFavoritos"
+        android:id="@+id/mFavourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:title="@string/text_menu_fav"
         android:orderInCategory="102"
         app:showAsAction="always"
+        android:layout_gravity="end"
         android:icon="@drawable/star">
-
     </item>
 
-
-
+    <item
+        android:id="@+id/mAbout"
+        android:title="@string/text_menu_about">
+    </item>
 
 </menu>

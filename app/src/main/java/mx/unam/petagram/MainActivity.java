@@ -11,47 +11,40 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListaMascotas extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
-    private List<Mascota> mascotas;
-    private RecyclerView listaMascotas;
+    private List<Pet> pets;
+    private RecyclerView petList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_mascotas);
+        setContentView(R.layout.activity_main);
 
         Toolbar actionBar = (Toolbar) findViewById(R.id.actionbar);
         setSupportActionBar(actionBar);
 
-        listaMascotas = (RecyclerView) findViewById(R.id.recyclerListaMascotas);
-
+        petList = (RecyclerView) findViewById(R.id.recyclerListPets);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        petList.setLayoutManager(linearLayoutManager);
 
-        listaMascotas.setLayoutManager(linearLayoutManager);
-        inicializarListaMascotas();
-        inicializarAdaptador();
+        initializePetList();
+        initializeAdapter();
     }
 
-    public void inicializarAdaptador(){
-
-        MascotaAdaptador adaptador = new MascotaAdaptador(mascotas, this);
-        listaMascotas.setAdapter(adaptador);
-
+    public void initializeAdapter(){
+        PetAdapter adapter = new PetAdapter(pets, this);
+        petList.setAdapter(adapter);
     }
 
-    public void inicializarListaMascotas(){
-
-        mascotas = new ArrayList<Mascota>();
-
-        mascotas.add(new Mascota(R.drawable.fox, "Kira"));
-        mascotas.add(new Mascota(R.drawable.bear, "Nero"));
-        mascotas.add(new Mascota(R.drawable.elephant, "Lola"));
-        mascotas.add(new Mascota(R.drawable.sheep, "Gardfiel"));
-        mascotas.add(new Mascota(R.drawable.monkey, "Simon"));
-
-
+    public void initializePetList(){
+        pets = new ArrayList<>();
+        pets.add(new Pet(R.drawable.fox, "Foxy"));
+        pets.add(new Pet(R.drawable.bear, "Yogi"));
+        pets.add(new Pet(R.drawable.elephant, "Donphy"));
+        pets.add(new Pet(R.drawable.sheep, "Sheepy"));
+        pets.add(new Pet(R.drawable.monkey, "Cesar"));
     }
 
     @Override
@@ -62,17 +55,13 @@ public class ListaMascotas extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         switch (item.getItemId()) {
-
             case R.id.mAbout:
-
                 break;
-            case R.id.mFavoritos:
-                Intent i = new Intent(this, MascotasFavoritas.class);
+            case R.id.mFavourites:
+                Intent i = new Intent(this, FavouritePetsActivity.class);
                 startActivity(i);
                 break;
-
         }
         return super.onOptionsItemSelected(item);
     }

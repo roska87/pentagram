@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imgCVMascota"
+            android:id="@+id/imgCVPet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/elephant"
@@ -31,24 +31,17 @@
                 android:layout_width="@dimen/imageButton_dimen"
                 android:layout_height="@dimen/imageButton_dimen"
                 android:src="@drawable/bone"
-                android:background="@color/colorBlanco"
+                android:background="@color/colorWhite"
                 />
 
             <TextView
-                android:id="@+id/textViewCVNombre"
-                android:layout_width="@dimen/textViewNombre_width"
-                android:layout_height="@dimen/textViewNombre_heigth"
-                android:text="@string/card_view_textNombre"
+                android:id="@+id/textViewCVName"
+                android:layout_width="@dimen/textView_name_width"
+                android:layout_height="@dimen/textView_name_heigth"
+                android:text="@string/card_view_text_name"
                 android:textSize="@dimen/textViewSize"
                 android:textStyle="bold"
                 android:paddingTop="13dp"/>
-
-            <ImageView
-                android:id="@+id/imgCVRate"
-                android:layout_width="@dimen/imageView_width"
-                android:layout_height="@dimen/imageView_heigth"
-                android:src="@drawable/bone2"
-                android:layout_marginLeft="20dp"/>
 
             <TextView
                 android:id="@+id/textViewCVContador"
@@ -58,6 +51,13 @@
                 android:textSize="@dimen/textViewSize"
                 android:layout_marginLeft="5dp"
                 android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/imgCVRate"
+                android:layout_width="@dimen/imageView_width"
+                android:layout_height="@dimen/imageView_heigth"
+                android:src="@drawable/bone2"
+                android:layout_marginLeft="20dp"/>
 
         </LinearLayout>
 
