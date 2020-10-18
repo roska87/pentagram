@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardviewMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:id="@+id/layoutCV_Vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgCVMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/elephant"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:id="@+id/layoutCV_Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgBtnCVLike"
+                android:layout_width="@dimen/imageButton_dimen"
+                android:layout_height="@dimen/imageButton_dimen"
+                android:src="@drawable/bone"
+                android:background="@color/colorBlanco"
+                />
+
+            <TextView
+                android:id="@+id/textViewCVNombre"
+                android:layout_width="@dimen/textViewNombre_width"
+                android:layout_height="@dimen/textViewNombre_heigth"
+                android:text="@string/card_view_textNombre"
+                android:textSize="@dimen/textViewSize"
+                android:textStyle="bold"
+                android:paddingTop="13dp"/>
+
+            <ImageView
+                android:id="@+id/imgCVRate"
+                android:layout_width="@dimen/imageView_width"
+                android:layout_height="@dimen/imageView_heigth"
+                android:src="@drawable/bone2"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/textViewCVContador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textSize="@dimen/textViewSize"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
