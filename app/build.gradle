@@ -5,7 +5,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "mx.unam.pentagram"
+        applicationId 'mx.unam.petagram'
         minSdkVersion 15
         targetSdkVersion 30
         versionCode 1

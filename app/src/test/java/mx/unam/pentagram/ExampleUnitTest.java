@@ -1,4 +1,4 @@
-package mx.unam.pentagram;
+package mx.unam.petagram;
 
 import org.junit.Test;
 
