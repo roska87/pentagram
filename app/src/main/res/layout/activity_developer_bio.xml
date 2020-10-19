@@ -26,6 +26,7 @@
             android:layout_height="wrap_content">
 
             <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/ivDevBioImage"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:src="@drawable/profilepic"
@@ -54,7 +55,7 @@
             android:layout_height="wrap_content"
             android:text="@string/bio_mision"
             android:fontFamily="serif-monospace"
-            />
+            android:gravity="center"/>
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -23,7 +23,9 @@
     <string name="contacto_email_bio">Contacto por email</string>
     <string name="contacto_phone_bio">Contacto por telefono</string>
     <string name="message_sent">Mensaje enviado!</string>
+    <string name="message_sending">Enviando mensaje</string>
     <string name="message_error">Error de envío</string>
+    <string name="please_wait">Por favor espera...</string>
 
     <!--Textos del menu de popup-->
     <string name="menu_view">Ver Imágen</string>
@@ -32,9 +34,5 @@
     <!-- Textos de los menus contextuales -->
     <string name="mEdit_title">Editar</string>
     <string name="mDelete_title">Eliminar</string>
-
-    <!-- mail credentials -->
-    <string name="user">test@gmail.com</string>
-    <string name="pasword">123456</string>
 
 </resources>
