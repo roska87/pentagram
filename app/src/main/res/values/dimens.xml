@@ -13,4 +13,6 @@
     <dimen name="padding_dev_bio">6sp</dimen>
     <dimen name="textSize_title">22sp</dimen>
     <dimen name="icons_size">40dp</dimen>
+    <dimen name="card_view_horizontal_margin">5dp</dimen>
+    <dimen name="card_view_vertical_margin">5dp</dimen>
 </resources>
