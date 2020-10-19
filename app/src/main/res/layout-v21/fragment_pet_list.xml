@@ -5,13 +5,10 @@
     android:orientation="vertical"
     tools:context=".fragments.PetListFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerFragmentPetList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/actionbar">
-
+        android:layout_height="match_parent">
     </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>

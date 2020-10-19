@@ -1,7 +1,9 @@
 package mx.unam.petagram.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -51,6 +53,23 @@ public class FavouritePetsActivity extends AppCompatActivity {
         petsFAV.add(new Pet(R.drawable.elephant, "Donphy"));
         petsFAV.add(new Pet(R.drawable.sheep, "Sheepy"));
         petsFAV.add(new Pet(R.drawable.monkey, "Cesar"));
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent = null;
+        switch (item.getItemId()) {
+            case R.id.mAbout:
+                intent = new Intent(this, DeveloperBioActivity.class);
+                break;
+            case R.id.mContact:
+                intent = new Intent(this, ContactActivity.class);
+                break;
+        }
+        if(intent != null){
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
