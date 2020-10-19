@@ -35,4 +35,12 @@
     <string name="mEdit_title">Editar</string>
     <string name="mDelete_title">Eliminar</string>
 
+    <string name="text_cardViewMyPet">Metzíe</string>
+
+    <!-- About -->
+    <string name="text_view_aboutHeader">Acerca de...</string>
+    <string name="text_view_aboutInformation">Información del sistema</string>
+    <string name="text_view_aboutVersion">Versión: 2.0</string>
+    <string name="text_view_aboutDeveloper">Desarrollador: Roska</string>
+
 </resources>

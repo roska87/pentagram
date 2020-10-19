@@ -21,7 +21,7 @@
             android:parentActivityName=".activities.MainActivity">
         </activity>
         <activity
-            android:name=".activities.DeveloperBio"
+            android:name=".activities.DeveloperBioActivity"
             android:parentActivityName=".activities.MainActivity">
 
             <!-- soporte para versiones anteriores a 4.0 -->

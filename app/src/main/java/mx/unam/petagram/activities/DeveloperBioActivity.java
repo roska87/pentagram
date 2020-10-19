@@ -13,7 +13,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import mx.unam.petagram.R;
 
-public class DeveloperBio extends AppCompatActivity implements View.OnClickListener {
+public class DeveloperBioActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Toolbar myActionbar;
     private TextView tituloActionBar;
