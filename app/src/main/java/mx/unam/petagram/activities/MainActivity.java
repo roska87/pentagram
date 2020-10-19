@@ -80,17 +80,6 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void actionContact(){
-        Intent intent = new Intent(this, ContactActivity.class);
-        startActivity(intent);
-    }
-
-    private void actionAbout(){
-        //crear un intent para ir a la nueva actividad
-        Intent intent = new Intent(this, DeveloperBio.class);
-        startActivity(intent);
-    }
-
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
