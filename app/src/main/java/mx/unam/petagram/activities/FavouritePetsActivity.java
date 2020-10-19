@@ -1,4 +1,4 @@
-package mx.unam.petagram;
+package mx.unam.petagram.activities;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,6 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import mx.unam.petagram.Pet;
+import mx.unam.petagram.adapters.PetAdapter;
+import mx.unam.petagram.R;
 
 public class FavouritePetsActivity extends AppCompatActivity {
 
@@ -51,7 +55,7 @@ public class FavouritePetsActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
+        getMenuInflater().inflate(R.menu.menu_options, menu);
         return true;
     }
 

@@ -10,20 +10,37 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FavouritePetsActivity"
-            android:parentActivityName=".MainActivity">
+        <activity android:name=".activities.FavouritePetsActivity"
+            android:parentActivityName=".activities.MainActivity">
+        </activity>
+        <activity
+            android:name=".activities.DeveloperBio"
+            android:parentActivityName=".activities.MainActivity">
+
+            <!-- soporte para versiones anteriores a 4.0 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity android:name=".activities.ContactActivity"
+            android:parentActivityName=".activities.MainActivity">
+
+            <!-- soporte para versiones anteriores a 4.0 -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
         </activity>
         <!--Soporte para 4.0-->
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity">
+            android:value=".activities.MainActivity">
         </meta-data>
     </application>
 

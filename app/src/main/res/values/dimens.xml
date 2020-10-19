@@ -9,4 +9,8 @@
     <dimen name="imageView_width">20dp</dimen>
     <dimen name="imageView_heigth">50dp</dimen>
     <dimen name="elevation_bar">4dp</dimen>
+    <dimen name="predet_margin">24dp</dimen>
+    <dimen name="padding_dev_bio">6sp</dimen>
+    <dimen name="textSize_title">22sp</dimen>
+    <dimen name="icons_size">40dp</dimen>
 </resources>

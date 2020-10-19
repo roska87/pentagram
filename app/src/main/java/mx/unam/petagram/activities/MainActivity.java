@@ -1,15 +1,22 @@
-package mx.unam.petagram;
+package mx.unam.petagram.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
+
+import mx.unam.petagram.Pet;
+import mx.unam.petagram.adapters.PetAdapter;
+import mx.unam.petagram.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -49,20 +56,44 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
+        getMenuInflater().inflate(R.menu.menu_options, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent = null;
         switch (item.getItemId()) {
             case R.id.mAbout:
+                intent = new Intent(this, DeveloperBio.class);
+                break;
+            case R.id.mContact:
+                intent = new Intent(this, ContactActivity.class);
                 break;
             case R.id.mFavourites:
-                Intent i = new Intent(this, FavouritePetsActivity.class);
-                startActivity(i);
+                intent = new Intent(this, FavouritePetsActivity.class);
                 break;
         }
+        if(intent != null){
+            startActivity(intent);
+        }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void actionContact(){
+        Intent intent = new Intent(this, ContactActivity.class);
+        startActivity(intent);
+    }
+
+    private void actionAbout(){
+        //crear un intent para ir a la nueva actividad
+        Intent intent = new Intent(this, DeveloperBio.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        getMenuInflater().inflate(R.menu.menu_context, menu);
     }
 }

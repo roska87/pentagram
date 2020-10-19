@@ -14,6 +14,11 @@
     </item>
 
     <item
+        android:id="@+id/mContact"
+        android:title="@string/text_menu_contact">
+    </item>
+
+    <item
         android:id="@+id/mAbout"
         android:title="@string/text_menu_about">
     </item>

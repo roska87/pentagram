@@ -1,6 +1,40 @@
 <resources>
     <string name="app_name">Petagram</string>
     <string name="card_view_text_name">Nombre</string>
-    <string name="text_menu_about">About</string>
+    <string name="text_menu_about">Acerca de</string>
+    <string name="text_menu_contact">Contacto</string>
     <string name="text_menu_fav">Fav</string>
+
+    <!--Titulos de la barra de acción en las diferentes actividades-->
+    <string name="title_actionBar_bio">Acerca de</string>
+    <string name="title_actionBar_fav">Favoritas</string>
+    <string name="title_actionBar_contact">Contacto</string>
+
+    <!--Textos de la actividad de enviar correo de contacto-->
+    <string name="btnSendMessage">Enviar mensaje</string>
+    <string name="txtNameContact">Ingrese su nombre</string>
+    <string name="txtMailContact">Ingrese su correo</string>
+    <string name="txtMailSubject">Ingrese el asunto</string>
+    <string name="txtMailMessage">Ingrese su mensaje</string>
+
+    <string name="developer_name">Ari Rostkier</string>
+    <string name="bio_mision">Software Development</string>
+
+    <string name="contacto_email_bio">Contacto por email</string>
+    <string name="contacto_phone_bio">Contacto por telefono</string>
+    <string name="message_sent">Mensaje enviado!</string>
+    <string name="message_error">Error de envío</string>
+
+    <!--Textos del menu de popup-->
+    <string name="menu_view">Ver Imágen</string>
+    <string name="menu_detail">Ver detalles imágen</string>
+
+    <!-- Textos de los menus contextuales -->
+    <string name="mEdit_title">Editar</string>
+    <string name="mDelete_title">Eliminar</string>
+
+    <!-- mail credentials -->
+    <string name="user">test@gmail.com</string>
+    <string name="pasword">123456</string>
+
 </resources>

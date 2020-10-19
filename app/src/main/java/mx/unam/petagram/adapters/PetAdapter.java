@@ -1,4 +1,4 @@
-package mx.unam.petagram;
+package mx.unam.petagram.adapters;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -12,6 +12,9 @@ import android.widget.Toast;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+
+import mx.unam.petagram.Pet;
+import mx.unam.petagram.R;
 
 public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder>  {
 
