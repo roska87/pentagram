@@ -20,5 +20,5 @@
 ### About activity
 ![Screenshot6](/pantallas/AboutActivity.png)
 
-### UML
+### DB model
 ![Screenshot6](/pantallas/uml.png)
