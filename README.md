@@ -19,3 +19,6 @@
 
 ### About activity
 ![Screenshot6](/pantallas/AboutActivity.png)
+
+### UML
+![Screenshot6](/pantallas/uml.png)
