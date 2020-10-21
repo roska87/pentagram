@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-import mx.unam.petagram.db.PetConstructor;
-import mx.unam.petagram.pojo.Pet;
+import mx.unam.petagram.model.PetConstructor;
+import mx.unam.petagram.model.Pet;
 import mx.unam.petagram.R;
 
 public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder>  {

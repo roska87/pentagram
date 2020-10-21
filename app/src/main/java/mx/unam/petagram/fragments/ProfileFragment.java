@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
-import mx.unam.petagram.pojo.Pet;
+import mx.unam.petagram.model.Pet;
 import mx.unam.petagram.R;
 import mx.unam.petagram.adapters.PetAdapter;
 

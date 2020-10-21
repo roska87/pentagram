@@ -1,4 +1,4 @@
-package mx.unam.petagram.model;
+package mx.unam.petagram.db;
 
 public final class DataBaseConstants {
 
@@ -16,6 +16,3 @@ public final class DataBaseConstants {
     public static final String COLUMN_LIKES_LIKES = "likes";
 
 }
-
-
-// select p.*, SUM(l.likes) from pets p join likes l on (p.id = l.id_pet) group by p.id order by l.id desc limit 5;

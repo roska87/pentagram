@@ -7,16 +7,14 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
 import mx.unam.petagram.R;
-import mx.unam.petagram.db.FavouritePetConstructor;
-import mx.unam.petagram.db.PetConstructor;
-import mx.unam.petagram.pojo.Pet;
+import mx.unam.petagram.model.FavouritePetConstructor;
+import mx.unam.petagram.model.Pet;
 
 public class FavouritePetAdapter extends RecyclerView.Adapter<FavouritePetAdapter.PetViewHolder>  {
 

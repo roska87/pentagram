@@ -14,10 +14,9 @@ import java.util.List;
 
 import mx.unam.petagram.adapters.FavouritePetAdapter;
 
-import mx.unam.petagram.pojo.Pet;
-import mx.unam.petagram.adapters.PetAdapter;
+import mx.unam.petagram.model.Pet;
 import mx.unam.petagram.R;
-import mx.unam.petagram.presenters.FavouritePetsPresenter;
+import mx.unam.petagram.presenters.FavouritePetPresenter;
 import mx.unam.petagram.presenters.IFragmentPresenter;
 
 public class FavouritePetsActivity extends AppCompatActivity implements IFavouritePetsActivityView {
@@ -36,7 +35,7 @@ public class FavouritePetsActivity extends AppCompatActivity implements IFavouri
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         petListFAV = (RecyclerView) findViewById(R.id.recyclerPetListFAV);
-        presenter = new FavouritePetsPresenter(this, this);
+        presenter = new FavouritePetPresenter(this, this);
     }
 
     @Override

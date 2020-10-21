@@ -5,19 +5,17 @@ import android.content.Context;
 import java.util.List;
 
 import mx.unam.petagram.activities.IFavouritePetsActivityView;
-import mx.unam.petagram.db.FavouritePetConstructor;
-import mx.unam.petagram.fragments.IPetListFragmentView;
-import mx.unam.petagram.db.PetConstructor;
-import mx.unam.petagram.pojo.Pet;
+import mx.unam.petagram.model.FavouritePetConstructor;
+import mx.unam.petagram.model.Pet;
 
-public class FavouritePetsPresenter implements IFragmentPresenter {
+public class FavouritePetPresenter implements IFragmentPresenter {
 
     private IFavouritePetsActivityView iFavouritePetsActivityView;
     private Context context;
     private FavouritePetConstructor petConstructor;
     private List<Pet> favouritePets;
 
-    public FavouritePetsPresenter(Context context, IFavouritePetsActivityView iFavouritePetsActivityView) {
+    public FavouritePetPresenter(Context context, IFavouritePetsActivityView iFavouritePetsActivityView) {
         this.iFavouritePetsActivityView = iFavouritePetsActivityView;
         this.context = context;
         this.getPets();

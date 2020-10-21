@@ -9,11 +9,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
-import mx.unam.petagram.pojo.Pet;
+import mx.unam.petagram.model.Pet;
 import mx.unam.petagram.R;
 import mx.unam.petagram.adapters.PetAdapter;
 import mx.unam.petagram.presenters.IFragmentPresenter;
-import mx.unam.petagram.presenters.PetsPresenter;
+import mx.unam.petagram.presenters.PetPresenter;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -33,7 +33,7 @@ public class PetListFragment extends Fragment implements IPetListFragmentView {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_pet_list, container, false);
         petList = (RecyclerView) view.findViewById(R.id.recyclerFragmentPetList);
-        iFragmentPresenter = new PetsPresenter(this, getContext());
+        iFragmentPresenter = new PetPresenter(this, getContext());
         return view;
     }
 

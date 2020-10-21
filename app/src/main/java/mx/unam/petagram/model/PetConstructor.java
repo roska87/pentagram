@@ -1,4 +1,4 @@
-package mx.unam.petagram.db;
+package mx.unam.petagram.model;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mx.unam.petagram.R;
-import mx.unam.petagram.model.DataBaseConstants;
-import mx.unam.petagram.pojo.Pet;
+import mx.unam.petagram.db.DataBase;
+import mx.unam.petagram.db.DataBaseConstants;
 
 public class PetConstructor {
 

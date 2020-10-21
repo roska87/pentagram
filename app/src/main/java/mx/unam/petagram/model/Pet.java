@@ -1,4 +1,4 @@
-package mx.unam.petagram.pojo;
+package mx.unam.petagram.model;
 
 public class Pet {
 

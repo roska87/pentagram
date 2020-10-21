@@ -2,7 +2,7 @@ package mx.unam.petagram.fragments;
 
 import java.util.List;
 import mx.unam.petagram.adapters.PetAdapter;
-import mx.unam.petagram.pojo.Pet;
+import mx.unam.petagram.model.Pet;
 
 public interface IPetListFragmentView {
 

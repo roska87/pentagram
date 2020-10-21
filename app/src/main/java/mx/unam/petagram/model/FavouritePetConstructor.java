@@ -1,8 +1,10 @@
-package mx.unam.petagram.db;
+package mx.unam.petagram.model;
 
 import android.content.Context;
 import java.util.List;
-import mx.unam.petagram.pojo.Pet;
+
+import mx.unam.petagram.db.DataBase;
+import mx.unam.petagram.model.Pet;
 
 public class FavouritePetConstructor {
 
