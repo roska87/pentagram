@@ -10,17 +10,21 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import mx.unam.petagram.Pet;
+import mx.unam.petagram.adapters.FavouritePetAdapter;
+
+import mx.unam.petagram.pojo.Pet;
 import mx.unam.petagram.adapters.PetAdapter;
 import mx.unam.petagram.R;
+import mx.unam.petagram.presenters.FavouritePetsPresenter;
+import mx.unam.petagram.presenters.IFragmentPresenter;
 
-public class FavouritePetsActivity extends AppCompatActivity {
+public class FavouritePetsActivity extends AppCompatActivity implements IFavouritePetsActivityView {
 
     private List<Pet> petsFAV;
     private RecyclerView petListFAV;
+    private IFragmentPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,30 +33,27 @@ public class FavouritePetsActivity extends AppCompatActivity {
 
         Toolbar actionBar = (Toolbar) findViewById(R.id.actionbar);
         setSupportActionBar(actionBar);
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         petListFAV = (RecyclerView) findViewById(R.id.recyclerPetListFAV);
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
-        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        petListFAV.setLayoutManager(linearLayoutManager);
-
-        initializePetList();
-        initializeAdapter();
+        presenter = new FavouritePetsPresenter(this, this);
     }
 
-    public void initializeAdapter(){
-        PetAdapter adapter = new PetAdapter(petsFAV, this);
+    @Override
+    public void initializeAdapter(FavouritePetAdapter adapter){
         petListFAV.setAdapter(adapter);
     }
 
-    public void initializePetList(){
-        petsFAV = new ArrayList<>();
-        petsFAV.add(new Pet(R.drawable.fox, "Foxy"));
-        petsFAV.add(new Pet(R.drawable.bear, "Yogi"));
-        petsFAV.add(new Pet(R.drawable.elephant, "Donphy"));
-        petsFAV.add(new Pet(R.drawable.sheep, "Sheepy"));
-        petsFAV.add(new Pet(R.drawable.monkey, "Cesar"));
+    @Override
+    public void generateLayout() {
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        petListFAV.setLayoutManager(linearLayoutManager);
+    }
+
+    @Override
+    public FavouritePetAdapter createAdapter(List<Pet> pets) {
+        return new FavouritePetAdapter(pets, this);
     }
 
     @Override

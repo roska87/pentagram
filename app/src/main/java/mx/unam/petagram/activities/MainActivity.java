@@ -10,7 +10,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
@@ -18,9 +17,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-import mx.unam.petagram.Pet;
 import mx.unam.petagram.adapters.PageAdapter;
-import mx.unam.petagram.adapters.PetAdapter;
 import mx.unam.petagram.R;
 import mx.unam.petagram.fragments.PetListFragment;
 import mx.unam.petagram.fragments.ProfileFragment;

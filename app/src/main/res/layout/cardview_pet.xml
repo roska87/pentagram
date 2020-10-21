@@ -46,10 +46,10 @@
                 android:paddingTop="13dp"/>
 
             <TextView
-                android:id="@+id/textViewCVContador"
+                android:id="@+id/textViewCVLikes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5"
+                android:text="0"
                 android:textSize="@dimen/textViewSize"
                 android:layout_marginLeft="5dp"
                 android:textStyle="bold"/>

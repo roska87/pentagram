@@ -1,10 +1,14 @@
-package mx.unam.petagram;
+package mx.unam.petagram.pojo;
 
 public class Pet {
 
+    private int id;
     private int picture;
     private String name;
-    private int rate;
+    private int likes = 0;
+
+    public Pet() {
+    }
 
     public Pet(int picture, String name) {
         this.picture = picture;
@@ -19,19 +23,27 @@ public class Pet {
         this.picture = picture;
     }
 
-    public int getRate() {
-        return rate;
-    }
-
-    public void setRate(int rate) {
-        this.rate = rate;
-    }
-
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
     }
 }

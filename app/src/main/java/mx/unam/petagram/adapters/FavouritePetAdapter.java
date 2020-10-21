@@ -13,21 +13,21 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+import mx.unam.petagram.R;
+import mx.unam.petagram.db.FavouritePetConstructor;
 import mx.unam.petagram.db.PetConstructor;
 import mx.unam.petagram.pojo.Pet;
-import mx.unam.petagram.R;
 
-public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder>  {
+public class FavouritePetAdapter extends RecyclerView.Adapter<FavouritePetAdapter.PetViewHolder>  {
 
     private List<Pet> pets;
     private Activity activity;
-    private PetConstructor petConstructor;
+    private FavouritePetConstructor petConstructor;
 
-    public PetAdapter(List<Pet> pets, Activity activity) {
+    public FavouritePetAdapter(List<Pet> pets, Activity activity) {
         this.pets = pets;
         this.activity = activity;
-        this.petConstructor = new PetConstructor(activity);
-        petConstructor.insertPets();
+        this.petConstructor = new FavouritePetConstructor(activity);
     }
 
     @Override
@@ -43,6 +43,7 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder>  
         petViewHolderholder.nameCV.setText(pet.getName());
         petViewHolderholder.textViewLikes.setText(String.valueOf(pet.getLikes()));
 
+        /*
         petViewHolderholder.imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +52,7 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder>  
                 petViewHolderholder.textViewLikes.setText(String.valueOf(petConstructor.getLikes(pet)));
             }
         });
+         */
     }
 
     @Override
